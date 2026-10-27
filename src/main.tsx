@@ -26,6 +26,8 @@ import App from './App.tsx'
 
 import theme from './styles/theme.ts'
 
+import './App.css'
+
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <ThemeProvider theme={ theme }>

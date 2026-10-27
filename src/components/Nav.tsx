@@ -81,7 +81,7 @@ export default function Nav() {
                   color: 'inherit',
                 }}
               >
-                NASA SEARCH
+                RELIABILITY SEARCH
               </Typography>
 
               <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
@@ -90,10 +90,10 @@ export default function Nav() {
                     key={page}
                     variant='text'
                     href={`./${page.toLowerCase().replace(/\s+/g, '-')}`}
-                    height='calc(100% + 16px)'
                     
                     sx={{
                       color: 'inherit',
+                      height: 'calc(100% + 16px)',
                       // fontWeight: 500,
                     }}
                   >
