@@ -5,7 +5,10 @@ const theme = createTheme({
   typography: {
     fontFamily: '"Roboto Condensed", sans-serif',
     h1: {
-      fontFamily: '"Roboto Condensed", sans-serif',
+      fontFamily: '"Syncopate", sans-serif',
+      fontSize: '2.5em',
+      fontWeight: 700
+
     },
     h2: {
       fontFamily: '"Roboto Condensed", sans-serif',
@@ -25,6 +28,9 @@ const theme = createTheme({
       fontStyle: 'italic',
       fontSize: '1.6rem',
       fontWeight: 400,
+    },
+    subtitle1: {
+
     },
     body1: {
       fontFamily: '"Raleway", sans-serif',

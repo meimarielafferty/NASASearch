@@ -182,3 +182,7 @@
     border-right-color: var(--border);
   }
 }
+
+.MuiButton-root.MuiButton-outlined {
+  border-width: 2px;
+}

@@ -1,5 +1,5 @@
 // REACT IMPORTS
-import * as React from 'react'
+import * as React from 'react';
 
 // MUI IMPORTS
 import {
@@ -12,11 +12,11 @@ import {
   Button,
   Menu,
   MenuItem
-} from '@mui/material'
-import MenuIcon from '@mui/icons-material/Menu'
+} from '@mui/material';
+import MenuIcon from '@mui/icons-material/Menu';
 
 // LOCAL ASSETS IMPORTS
-import nasawhite from '../assets/NASA_WHITE_LOGO.png'
+import nasawhite from '../assets/NASA_WHITE_LOGO.png';
 
 const pages = ['Code Breakdown', 'Data Structure', 'About Mei'];
 
@@ -30,12 +30,16 @@ export default function Nav() {
   }
   
   const handleCloseMobileMenu = () => {
-    setAnchorNav(null)
-  }
+    setAnchorNav(null);
+  };
 
   return (
     <>
-      <Box sx={{ flexGrow: 1, top: 0, position: 'sticky' }}>
+      <Box sx={{ 
+        flexGrow: 1, 
+        end: 0,
+        position: 'sticky' 
+      }}>
         <AppBar position="static" sx={{ padding: {xs: '.5ch', md: '.5ch 5ch'} }}>
             <Toolbar  
               sx={{ 
@@ -81,7 +85,7 @@ export default function Nav() {
                   color: 'inherit',
                 }}
               >
-                NASA SEARCH
+                RELIABILITY SEARCH
               </Typography>
 
               <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
@@ -90,10 +94,10 @@ export default function Nav() {
                     key={page}
                     variant='text'
                     href={`./${page.toLowerCase().replace(/\s+/g, '-')}`}
-                    height='calc(100% + 16px)'
                     
                     sx={{
                       color: 'inherit',
+                      height: 'calc(100% + 16px)',
                       // fontWeight: 500,
                     }}
                   >
@@ -134,5 +138,6 @@ export default function Nav() {
         </AppBar>
       </Box>
     </>
-  )
-}
+  );
+
+} // Nav()
