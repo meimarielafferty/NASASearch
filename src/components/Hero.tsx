@@ -8,10 +8,10 @@ import {
   Grid,
   Container,
   Paper,
-} from '@mui/material'
+} from '@mui/material';
 
 // LOCAL ASSET IMPORTS
-import nasalogo from '../assets/NASA_Logo.webp'
+import nasalogo from '../assets/NASA_Logo.webp';
 
 export default function Hero() {
 
@@ -24,7 +24,7 @@ export default function Hero() {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          margin: { xs: '0 10%', md: '0 15%' }
+          margin: { xs: '0 0', md: '0 15%' }
         }}
       >
         <Grid size={{ xs: 8, md: 4 }} sx={{ display: 'flex', justifyContent: 'center' }}>
@@ -58,10 +58,21 @@ export default function Hero() {
             alignItems: { xs: 'center', md: 'flex-start' }
           }}
         >
-          <Typography variant='h6' sx={{ textAlign: { xs: 'center', md: 'justify' } }}>
+          <Typography
+            variant='h1'
+            sx={{
+              textAlign: { xs: 'center', md: 'left' }
+            }}
+          >Reliability Search APP</Typography>
+          <Typography 
+            variant='body1' 
+            sx={{ 
+              textAlign: { xs: 'center', md: 'justify' } 
+            }}
+          >
             This application was created to give a face to the search algorithm created for NASA's Reliability site which serves as a public directory for reliability resources. Some of the resources are published by NASA, and some are external resources utilized and endorsed by the NASA Reliability team.
           </Typography>
-          <div style={{ height: '4ch' }}></div>
+          <Box sx={{ height: '4ch' }}></Box>
           <a
             href='https://sma.nasa.gov/reliability/'
             target='_blank'
@@ -71,6 +82,6 @@ export default function Hero() {
         </Grid>
       </Grid>
     </>
-  )
+  );
 
-}
+} // Hero()

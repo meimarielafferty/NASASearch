@@ -16,7 +16,7 @@ import {
 // COMPONENT IMPORTS
 import Nav from './components/Nav'
 import Hero from './components/Hero'
-import SearchBox from './components/SearchBox'
+import SearchBox from './components/search/SearchBox'
 
 // LOCAL ASSET IMPORTS
 import nasalogo from './assets/NASA_Logo.webp'
