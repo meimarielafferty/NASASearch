@@ -19,7 +19,7 @@ import Hero from './components/Hero'
 import SearchBox from './components/search/SearchBox'
 
 // LOCAL ASSET IMPORTS
-import nasalogo from './assets/NASA_Logo.webp'
+import nasalogo from './assets/NASA_LOGO.webp'
 
 
 function App() {
