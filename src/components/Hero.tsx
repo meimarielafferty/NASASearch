@@ -11,7 +11,7 @@ import {
 } from '@mui/material';
 
 // LOCAL ASSET IMPORTS
-import nasalogo from '../assets/NASA_Logo.webp';
+import nasalogo from '../assets/NASA_LOGO.webp';
 
 export default function Hero() {
 
